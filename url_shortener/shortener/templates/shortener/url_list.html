@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Shortened URLs</title>
+</head>
+<body>
+    <h1>All Shortened URLs</h1>
+    <ul>
+        {% for url in urls %}
+            <li>
+                <a href="{{ url.original_url }}">{{ url.short_code }}</a>: {{ url.original_url }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
