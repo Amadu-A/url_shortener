@@ -139,3 +139,10 @@ ports:
 ```bash
 uv run uvicorn src.main:app --reload --port 8001
 ```
+---
+## Запуск тестов
+
+```bash
+cd url_shortener
+pytest -s
+```
